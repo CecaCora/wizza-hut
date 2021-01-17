@@ -18,6 +18,10 @@ body {
   background: url(images/background.png);
 }
 
+a {
+  cursor: pointer;
+}
+
 h1,
 h2 {
   font-family: 'Yusei Magic', sans-serif;
@@ -160,16 +164,23 @@ img {
 #contact {
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
-#contact p {
-  padding: 1rem;
+#contact h1 {
+  margin: 0;
+}
+
+#contact p,
+#contact a {
   text-align: center;
   max-width: 60ch;
 }
 
-.active {
-  display: flex;
+#contact .credit {
+  color: hsl(0, 0%, 14%);
+  font-size: 0.6rem;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 400px) {
